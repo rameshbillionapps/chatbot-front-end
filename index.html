@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chatbot</title>
+  <style>
+    /* Basic styles for a blue theme */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: lightgrey;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Navigation bar styles */
+    .nav {
+      background-color: #3399ff;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    .nav-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-right: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Header section styles */
+    header {
+      padding: 0; /* Remove padding for full height */
+      height: 30vh; /* Set height to 30% of viewport height */
+      text-align: center;
+      position: relative; /* Needed for absolute positioning of text */
+    }
+
+    header svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    header h1 {
+      color: white;
+      font-size: 2em;
+      position: absolute; /* Position text absolutely within header */
+      top: 50%; /* Center vertically */
+      left: 50%; /* Center horizontally */
+      transform: translate(-50%, -50%); /* Adjust positioning if needed */
+    }
+
+    /* Body section styles */
+    .section {
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+
+    .section h2 {
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      line-height: 1.5;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #3399ff;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+  </style>
+      <script src="chat.js?v1.8"></script>
+    <script>
+        // Initialize chat when the page loads
+        document.addEventListener("DOMContentLoaded", function() {
+            // Call initialization function from chat.js
+            initializeChat();
+             
+        });
+    </script>
+</head>
+<body>
+    <header>
+
+      
+
+    <h1>Welcome to our Website!</h1>
+
+  </header>
+
+  <div class="container">
+    <nav class="nav">
+      <div class="logo">
+        </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="section">
+      <h2>Section 1 Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod risus eget sapien fringilla, nec pretium elit ullamcorper. Nullam venenatis diam nec odio cursus, nec blandit elit consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    </section>
+
+    <section class="section">
+      <h2>Section 2 Title</h2>
+      <p>Donec id elit ut purus semper vestibulum. Pellentesque eget ultrices eros. Donec imperdiet scelerisque ipsum euismod laoreet. Integer posuere erat a ante blandit, a sodales ipsum volutpat. Sed posuere consectetur est at lobortis.</p>
+    </section>
+
+    <section class="section">
+      <h2>Section 3 Title</h2>
+      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec eu libero sit amet quam egestas semper. Aenean eu leo quam. Pellentesque quam pede, vestibulum at ultrices eget, tempor sit amet velit.</p>
+    </section>
+</div>
+<!-- Chat container -->
+<div id="ba-chat-icon-container">
+    <!-- Chat icon -->
+    <div id="ba-chat-icon" class="ba-chat-icon"></div>
+    <!-- Close chat -->
+    <div id="ba-close-button" class="ba-close-button ba-close-chat"></div>
+</div>
+<!-- Chat container END-->
+    <footer>
+  <p>&copy; 2024 Company Name. All Rights Reserved.</p>
+</footer>
+      
+</html>

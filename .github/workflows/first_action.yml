@@ -23,4 +23,4 @@ jobs:
           HOSTGATOR_USER: ${{ secrets.HOSTGATOR_USERNAME }}
           HOSTGATOR_HOST: ${{ secrets.HOSTGATOR_HOST }}
         run: |
-          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" / $HOSTGATOR_USER@$HOSTGATOR_HOST:/home/billionapps/public_html/chat.billionapps.net/devchat/
+          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" /public $HOSTGATOR_USER@$HOSTGATOR_HOST:/home/billionapps/public_html/chat.billionapps.net/devchat/
